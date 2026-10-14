@@ -48,8 +48,8 @@ experience:
 
 ## Publications
 
-Please see my [Publications](/jiaxinhou/publications/) page for journal articles, preprints, and working papers.
+Please see my [Publications](/publications/) page for journal articles, preprints, and working papers.
 
 ## Presentations
 
-Please see my [Presentations](/jiaxinhou/talks/) page for conference presentations and posters.
+Please see my [Presentations](/talks/) page for conference presentations and posters.

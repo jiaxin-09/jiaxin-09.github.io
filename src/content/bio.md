@@ -17,7 +17,7 @@ following my undergraduate studies at the University of Sydney, where I received
 
 My current research includes developing **game-theoretic equilibrium models** for transportation and energy systems, particularly mixed-autonomy transportation networks and coupled transportation–electricity systems, and studying **nonconvex** optimization problems involving **integer variables** and **complementarity constraints**.
 
-For more details, please see my [Publications](/jiaxinhou/publications/).
+For more details, please see my [Publications](/publications/).
 
 ## Research Interests
 
@@ -46,7 +46,7 @@ I've always loved exploring new places and experiencing different cultures. Each
 
 ### Things I Enjoy
 
-- **Rock Music <img src="/jiaxinhou/drum-kit.svg" alt="Drum kit" width="22" height="22" style="display: inline-block; vertical-align: middle;" />** — Especially Second Hand Rose (二手玫瑰)! There's something truly special about their music that keeps me hooked, and their live performances are absolutely incredible!
+- **Rock Music <img src="/drum-kit.svg" alt="Drum kit" width="22" height="22" style="display: inline-block; vertical-align: middle;" />** — Especially Second Hand Rose (二手玫瑰)! There's something truly special about their music that keeps me hooked, and their live performances are absolutely incredible!
 
 - **Werewolf 🐺🌙** — A game where trusting the wrong person is half the fun, and convincing others to trust you is the other half!
 

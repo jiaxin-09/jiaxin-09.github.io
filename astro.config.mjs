@@ -19,7 +19,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://jiaxin-09.github.io',
-  base: '/jiaxinhou',
+  base: '/',
   integrations: [sitemap({
     filter: (page) => !['/dev-tools/', '/posts/', '/projects/'].some((path) => page.includes(path)),
   })],
