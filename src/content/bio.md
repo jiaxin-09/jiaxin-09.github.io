@@ -1,28 +1,56 @@
 ---
-name: "Claude Shannon"
-avatar: "shannon.jpg"
-shortBio: "Mathematician and electrical engineer known as the 'Father of Information Theory'. Pioneer in digital computing and cryptography."
-institution: "MIT, Cambridge MA"
+name: "Jiaxin Hou"
+avatar: "jiaxin.jpg"
+shortBio: "Ph.D. Student"
+institution: "University of Southern California"
 ---
 
-I am a mathematician and electrical engineer best known for founding **Information Theory**. My work in the late 1940s established the theoretical foundations of modern digital communications and computing.
-
-## My Life
-
-Born in Petoskey, Michigan on April 30, 1916, I showed an early aptitude for engineering and mathematics. After studying at the University of Michigan, I completed my PhD at MIT where I famously applied Boolean algebra to electrical circuits. My master's thesis on relay switching circuits is considered one of the most important master's theses ever written.
-
-During World War, I worked at Bell Labs on fire control systems and cryptography, which led to my seminal work in information theory.
+I am a Ph.D. student in the
+[Daniel J. Epstein Department of Industrial and Systems Engineering](https://ise.usc.edu/)
+at the
+[University of Southern California](https://www.usc.edu/),
+under the supervision of [Prof. Jong-Shi Pang](https://ise.usc.edu/directory/faculty/profile/?fname=Jong-shi&lname=Pang).
+Before coming to USC, I earned an M.S. in Mathematics from the National University of Singapore, 
+following my undergraduate studies at the University of Sydney, where I received a Bachelor of Commerce with a double major in Finance and Mathematics.
 
 ## Current Work
 
-I continue to work on various problems at the intersection of mathematics, engineering, and computer science. My interests include artificial intelligence, pattern recognition, game theory, and the fundamental limits of computation.
+My current research includes developing **game-theoretic equilibrium models** for transportation and energy systems, particularly mixed-autonomy transportation networks and coupled transportation–electricity systems, and studying **nonconvex** optimization problems involving **integer variables** and **complementarity constraints**.
 
-I also enjoy juggling, unicycling, and playing the clarinet - I even built a juggling machine!
+For more details, please see my [Publications](/jiaxinhou/publications/).
 
 ## Research Interests
 
-My research focus includes: **Information Theory**, **Cryptography**, **Digital Computing**, **Artificial Intelligence**, **Game Theory**, and **Switching Circuits**.
+My research focus includes: 
+- Optimization Theory and Algorithms
+- Game Theory and Equilibrium Modeling
+- Variational Inequalities and Complementarity Problems
+- Transportation and Energy Systems
 
+Game theory is what fascinates me most! 
+I enjoy using it to understand how different decision-makers interact in complex systems, 
+particularly in transportation and energy markets.
+Beyond modeling real-world problems, 
+I am equally interested in the mathematical foundations of optimization and equilibrium problems. 
+How can we better understand their theoretical properties and develop efficient algorithms to solve them, 
+especially when existing methods fall short? Exploring these questions is a central part of my research.
+
+
+## Beyond Research
+
+### My Journey 🌍 
+
+🇨🇳 China → 🇦🇺 Australia → 🇸🇬 Singapore → 🇺🇸 United States → To be continued...
+
+I've always loved exploring new places and experiencing different cultures. Each country I've lived in has brought unforgettable memories and new perspectives on life. I'm excited to see where my next adventure takes me!
+
+### Things I Enjoy
+
+- **Rock Music <img src="/jiaxinhou/drum-kit.svg" alt="Drum kit" width="22" height="22" style="display: inline-block; vertical-align: middle;" />** — Especially Second Hand Rose (二手玫瑰)! There's something truly special about their music that keeps me hooked, and their live performances are absolutely incredible!
+
+- **Werewolf 🐺🌙** — A game where trusting the wrong person is half the fun, and convincing others to trust you is the other half!
+
+- **Web Novels 📚♾️** — Too many novels read, too many fictional worlds explored, and an ever-growing reading list. AI may be making stories more abundant, finding a truly captivating one is the real challenge. And the ones I absolutely love? They earn a permanent spot on my bookshelf!
 ---
 
-*"I am a mathematician. I am interested in the fundamental limits on the rate at which information can be transmitted."*
+*"I am what I am"*     [♫](https://www.youtube.com/watch?v=Q66GFee4SYk)

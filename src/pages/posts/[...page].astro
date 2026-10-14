@@ -2,9 +2,10 @@
 import { getCollection } from "astro:content";
 import BaseListing from "../../layouts/BaseListing.astro";
 import { SITE, PAGES } from "../../config";
+import { withBase } from "../../utils/paths";
 
 if (PAGES.blog.isActive === false) {
-    return Astro.redirect("/404");
+    return Astro.redirect(withBase("/404"));
 }
 
 export async function getStaticPaths({ paginate }: any) {

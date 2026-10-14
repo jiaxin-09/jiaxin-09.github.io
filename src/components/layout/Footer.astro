@@ -1,6 +1,7 @@
 ---
 import { SITE, THEME_CONFIG, SETTINGS } from "../../config";
 import Icon from "../ui/Icon.astro";
+import { withBase } from "../../utils/paths";
 
 const currentYear = new Date().getFullYear();
 const showToggle = THEME_CONFIG.lightAndDark;
@@ -20,16 +21,6 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
                 class="link">Academic Portfolio Astro</a
             ></span
         >
-        <a
-            href="/rss.xml"
-            aria-label="RSS Feed"
-            title="RSS Feed"
-            target="_blank"
-            rel="noreferrer"
-            class="btn-icon"
-        >
-            <Icon name="RSS" size={16} />
-        </a>
         {
             showToggle && (
                 <button
@@ -45,7 +36,7 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
         {
             showDevTools && (
                 <a
-                    href="/dev-tools"
+                    href={withBase("/dev-tools")}
                     aria-label="Developer Tools"
                     title="Developer Tools"
                     class="btn-icon"

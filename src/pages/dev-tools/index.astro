@@ -1,11 +1,10 @@
 ---
 import { SETTINGS } from "../../config";
 import DevToolsLayout from "../../layouts/DevToolsLayout.astro";
+import { withBase } from "../../utils/paths";
 
 const redirect: boolean = import.meta.env.PROD && !SETTINGS.addDevToolsInProduction;
-if (redirect) {
-    return Astro.redirect("/404");
-}
+if (redirect) return Astro.redirect(withBase("/404"));
 
 const visualizers = [
     {
@@ -37,7 +36,7 @@ const visualizers = [
                 {
                     visualizers.map((tool) => (
                         <div class="card">
-                            <a href={tool.path} class="card-title">
+                            <a href={withBase(tool.path)} class="card-title">
                                 {tool.name}
                             </a>
                             <p class="card-desc">

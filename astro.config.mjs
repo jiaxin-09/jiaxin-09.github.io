@@ -18,7 +18,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://rubzip.github.io',
-  base: '/academic-portfolio-astro',
-  integrations: [sitemap()],
+  site: 'https://jiaxin-09.github.io',
+  base: '/jiaxinhou',
+  integrations: [sitemap({
+    filter: (page) => !['/dev-tools/', '/posts/', '/projects/'].some((path) => page.includes(path)),
+  })],
 });

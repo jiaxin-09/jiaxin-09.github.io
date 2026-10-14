@@ -8,8 +8,8 @@ export const PAGES: PagesConfig = {
     },
     blog: {
         title: "Blog",
-        subtitle: "Thoughts on physics, philosophy, and music.",
-        isActive: true,
+        subtitle: "Thoughts on research, learning, and life beyond academia.",
+        isActive: false,
     },
     publications: {
         title: "Publications",
@@ -17,18 +17,18 @@ export const PAGES: PagesConfig = {
         isActive: true,
     },
     talks: {
-        title: "Talks & Presentations",
-        subtitle: "Public lectures, colloquia, and conference presentations.",
+        title: "Presentations",
+        subtitle: "Conference presentations and posters.",
         isActive: true,
     },
     projects: {
         title: "Code & Projects",
         subtitle: "Open source contributions and technological experiments.",
-        isActive: true,
+        isActive: false,
     },
     teaching: {
-        title: "Teaching",
-        subtitle: "Academic courses and educational materials.",
+        title: "Teaching Experience",
+        subtitle: "",
         isActive: true,
     },
     tags: {

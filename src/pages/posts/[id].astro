@@ -4,9 +4,10 @@ import BaseDetail from "../../layouts/BaseDetail.astro";
 import ShareButtons from "../../components/ui/ShareButtons.astro";
 import { getReadingTime } from "../../utils/readingTime";
 import { PAGES, SITE } from "../../config";
+import { withBase } from "../../utils/paths";
 
 if (PAGES.blog.isActive === false) {
-    return Astro.redirect("/404");
+    return Astro.redirect(withBase("/404"));
 }
 
 export async function getStaticPaths() {
@@ -28,7 +29,7 @@ export async function getStaticPaths() {
 
 const { post, prevPost, nextPost } = Astro.props;
 const readingTime = `${getReadingTime(post.body || "")} min read`;
-const postUrl = new URL(`/posts/${post.id}`, SITE.website).href;
+const postUrl = new URL(withBase(`/posts/${post.id}`), SITE.website).href;
 ---
 
 <BaseDetail collection="posts" id={post.id} readingTime={readingTime}>
@@ -39,7 +40,7 @@ const postUrl = new URL(`/posts/${post.id}`, SITE.website).href;
         {
             prevPost && (
                 <a
-                    href={`/posts/${prevPost.id}`}
+                    href={withBase(`/posts/${prevPost.id}`)}
                     class="nav-prev flex flex-col group max-w-[45%] no-underline"
                 >
                     <span class="nav-label text-[0.8rem] uppercase tracking-wider opacity-75 font-bold mb-2">
@@ -55,7 +56,7 @@ const postUrl = new URL(`/posts/${post.id}`, SITE.website).href;
         {
             nextPost && (
                 <a
-                    href={`/posts/${nextPost.id}`}
+                    href={withBase(`/posts/${nextPost.id}`)}
                     class="nav-next flex flex-col items-end text-right group max-w-[45%] no-underline"
                 >
                     <span class="nav-label text-[0.8rem] uppercase tracking-wider opacity-75 font-bold mb-2">

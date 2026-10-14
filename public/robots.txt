@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap-index.xml
+Sitemap: https://jiaxin-09.github.io/jiaxinhou/sitemap-index.xml

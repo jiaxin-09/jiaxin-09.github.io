@@ -1,7 +1,31 @@
 ---
 import { NAV_LINKS, PAGES } from "../../config";
 
-const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+
+const getFullPath = (href: string) => {
+    if (href === "/") {
+        return `${base}/`;
+    }
+
+    return `${base}${href}`;
+};
+
+const isCurrentPage = (href: string) => {
+    const fullPath = getFullPath(href);
+    const normalizedPath = fullPath.replace(/\/$/, "") || "/";
+
+    if (href === "/") {
+        return currentPath === normalizedPath;
+    }
+
+    return (
+        currentPath === normalizedPath ||
+        currentPath.startsWith(`${normalizedPath}/`)
+    );
+};
 ---
 
 <nav class="navbar">
@@ -9,21 +33,20 @@ const currentPath = Astro.url.pathname;
         {
             NAV_LINKS.filter((link) => {
                 const isHome = link.href === "/";
+
                 const pageKey = isHome
                     ? "home"
                     : link.href.split("/").filter(Boolean)[0];
+
                 const pageConfig = (PAGES as any)[pageKey];
-                return link.isActive !== false && pageConfig?.active !== false;
+
+                return link.isActive !== false && pageConfig?.isActive !== false;
             }).map((link) => (
                 <li>
                     <a
-                        href={link.href}
+                        href={getFullPath(link.href)}
                         class={`nav-link ${
-                            currentPath === link.href ||
-                            (link.href !== "/" &&
-                                currentPath.startsWith(link.href))
-                                ? "active"
-                                : "inactive"
+                            isCurrentPage(link.href) ? "active" : "inactive"
                         }`}
                     >
                         {link.label}

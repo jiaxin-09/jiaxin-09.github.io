@@ -4,6 +4,7 @@ import BaseItemCard from "../../components/ui/BaseItemCard.astro";
 import { getAllTags, getContentByTag } from "../../utils/tags";
 import { getListingItem } from "../../utils/adapters";
 import { SITE } from "../../config";
+import { withBase } from "../../utils/paths";
 
 export async function getStaticPaths() {
     const tags = await getAllTags();
@@ -36,7 +37,7 @@ const content = await getContentByTag(tagName);
                 tags: item.data.tags,
                 externalUrl: item.data.external_url,
             };
-            const href = `/${item.collection}/${item.id}`;
+            const href = withBase(`/${item.collection}/${item.id}`);
             return <BaseItemCard {...listingItem} href={href} />;
         })}
     </section>

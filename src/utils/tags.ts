@@ -1,13 +1,30 @@
 import { getCollection } from 'astro:content';
+import { PAGES } from '../config';
+
+const taggedCollections = [
+    { name: 'publications', active: PAGES.publications.isActive !== false },
+    { name: 'talks', active: PAGES.talks.isActive !== false },
+    { name: 'projects', active: PAGES.projects.isActive !== false },
+    { name: 'posts', active: PAGES.blog.isActive !== false },
+    { name: 'teaching', active: PAGES.teaching.isActive !== false },
+] as const;
+
+async function getActiveEntries() {
+    const activeCollections = taggedCollections.filter(({ active }) => active);
+    const entries = await Promise.all(
+        activeCollections.map(async ({ name }) => ({
+            name,
+            entries: await getCollection(name),
+        })),
+    );
+
+    return entries.flatMap(({ name, entries }) =>
+        entries.map((entry) => ({ ...entry, collection: name })),
+    );
+}
 
 export async function getAllTags() {
-    const publications = await getCollection('publications');
-    const talks = await getCollection('talks');
-    const projects = await getCollection('projects');
-    const posts = await getCollection('posts');
-    const teaching = await getCollection('teaching');
-
-    const allEntries = [...publications, ...talks, ...projects, ...posts, ...teaching];
+    const allEntries = await getActiveEntries();
     const tags: Record<string, number> = {};
 
     allEntries.forEach(entry => {
@@ -27,25 +44,14 @@ export async function getAllTags() {
 
 export async function getContentByTag(tag: string) {
     const normalizedSearchTag = tag.toLowerCase();
-
-    const publications = await getCollection('publications');
-    const talks = await getCollection('talks');
-    const projects = await getCollection('projects');
-    const posts = await getCollection('posts');
-    const teaching = await getCollection('teaching');
+    const allEntries = await getActiveEntries();
 
     const filterFn = (entry: any) => {
         const entryTags = (entry.data as any).tags || [];
         return entryTags.some((t: string) => t.toLowerCase() === normalizedSearchTag);
     };
 
-    return [
-        ...publications.filter(filterFn).map(e => ({ ...e, collection: 'publications' })),
-        ...talks.filter(filterFn).map(e => ({ ...e, collection: 'talks' })),
-        ...projects.filter(filterFn).map(e => ({ ...e, collection: 'projects' })),
-        ...posts.filter(filterFn).map(e => ({ ...e, collection: 'posts' })),
-        ...teaching.filter(filterFn).map(e => ({ ...e, collection: 'teaching' })),
-    ].sort((a, b) => {
+    return allEntries.filter(filterFn).sort((a, b) => {
         const dateA = new Date((a.data as any).date || 0);
         const dateB = new Date((b.data as any).date || 0);
         return dateB.getTime() - dateA.getTime();
