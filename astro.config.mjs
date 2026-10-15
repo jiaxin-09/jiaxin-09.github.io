@@ -18,7 +18,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://jiaxin-09.github.io',
+  site: 'https://jiaxinhou.com',
   base: '/',
   integrations: [sitemap({
     filter: (page) => !['/dev-tools/', '/posts/', '/projects/'].some((path) => page.includes(path)),

@@ -1,7 +1,7 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "https://jiaxin-09.github.io/",
+    website: "https://jiaxinhou.com/",
     author: "Jiaxin Hou",
     desc: "Personal academic website of Jiaxin Hou, Ph.D. student at the University of Southern California.",
     title: "Jiaxin Hou",
