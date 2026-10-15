@@ -20,7 +20,7 @@ education:
 experience:
   - role: "Research Assistant"
     institution: "University of Southern California"
-    period: "2024 – Present"
+    period: "Summer 2026, Fall 2026"
     description: "Research in game theory, equilibrium modeling, and optimization, with applications to transportation and energy systems."
 
   - role: "Teaching Assistant — ISE 530: Optimization Methods for Analytics"
