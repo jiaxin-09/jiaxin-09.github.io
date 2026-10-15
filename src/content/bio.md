@@ -40,7 +40,7 @@ especially when existing methods fall short? Exploring these questions is a cent
 
 ### My Journey 🌍 
 
-🇨🇳 China → 🇦🇺 Australia → 🇸🇬 Singapore → 🇺🇸 United States → To be continued...
+🇨🇳 China → 🇦🇺 Australia → 🇸🇬 Singapore → 🇺🇸 United States → ？
 
 I've always loved exploring new places and experiencing different cultures. Each country I've lived in has brought unforgettable memories and new perspectives on life. I'm excited to see where my next adventure takes me!
 
