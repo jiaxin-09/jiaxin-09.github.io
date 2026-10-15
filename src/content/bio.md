@@ -50,7 +50,8 @@ I've always loved exploring new places and experiencing different cultures. Each
 
 - **Werewolf 🐺🌙** — A game where trusting the wrong person is half the fun, and convincing others to trust you is the other half!
 
-- **Web Novels 📚♾️** — Too many novels read, too many fictional worlds explored, and an ever-growing reading list. AI may be making stories more abundant, finding a truly captivating one is the real challenge. And the ones I absolutely love? They earn a permanent spot on my bookshelf!
+- **Web Novels 📚♾️** — My favorite time-killer! Countless lazy mornings in bed, long commutes, and cooking sessions spent getting lost in imaginative worlds with no boundaries. And the stories that steal my heart? They get a special place on my bookshelf—physical copies, of course! ♡
+
 ---
 
 *"I am what I am"*     [♫](https://www.youtube.com/watch?v=Q66GFee4SYk)
