@@ -46,7 +46,7 @@ I've always loved exploring new places and experiencing different cultures. Each
 
 ### Things I Enjoy
 
-- **Rock Music <img src="/drum-kit.svg" alt="Drum kit" width="22" height="22" style="display: inline-block; vertical-align: middle;" />** — Especially Second Hand Rose (二手玫瑰)! There's something truly special about their music that keeps me hooked, and their live performances are absolutely incredible!
+- **Rock Music <img src="/drum-kit.svg" alt="Drum kit" width="22" height="22" style="display: inline-block; vertical-align: middle;" />** — Especially Second Hand Rose (二手玫瑰)! So tacky it's cool, wildly avant-garde, and strangely addictive. Fans even joke that it takes ten years of psychosis to truly appreciate them!
 
 - **Werewolf 🐺🌙** — A game where trusting the wrong person is half the fun, and convincing others to trust you is the other half!
 
