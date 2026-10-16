@@ -3,7 +3,7 @@ title: "Traffic Equilibrium in Mixed-Autonomy Networks with Capped-Queueing Base
 date: "2025-07"
 event: "ICCOPT 2025 — International Conference on Continuous Optimization"
 description: "Poster Presentation | University of Southern California, Los Angeles, CA"
-external_url: "https://www.iccopt2025.org/"
+image: "/images/iccopt-2025-poster.jpg"
 tags:
   - autonomous vehicles
   - mixed autonomy
@@ -12,3 +12,5 @@ tags:
 ---
 
 Poster presented at the International Conference on Continuous Optimization (ICCOPT 2025), University of Southern California, Los Angeles.
+
+<img src="/images/iccopt-2025-poster.jpg" alt="ICCOPT 2025 conference poster" width="240" />

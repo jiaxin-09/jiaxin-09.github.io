@@ -11,9 +11,10 @@ interface Props {
     extraInput?: string;
     tags?: string[];
     externalUrl?: string;
+    image?: string;
 }
 
-const { title, href, description, date, authors, extraInput, tags, externalUrl } = Astro.props;
+const { title, href, description, date, authors, extraInput, tags, externalUrl, image } = Astro.props;
 ---
 
 <article class="card">
@@ -58,6 +59,15 @@ const { title, href, description, date, authors, extraInput, tags, externalUrl }
         }
 
         {description && <p class="card-desc">{description}</p>}
+
+        {image && (
+            <img
+                src={image}
+                alt={`${title} poster`}
+                class="card-image"
+                loading="lazy"
+            />
+        )}
     </div>
 
     {
